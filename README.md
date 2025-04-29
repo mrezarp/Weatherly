@@ -48,3 +48,7 @@ This project is open-source and free to use.
 ### 🤝 Credits
 Weather data provided by [OpenWeatherMap](https://openweathermap.org)  
 Weather icons powered by `.lottie` animations
+
+
+## 🌐 Live Demo
+[Click here to view the live app](https://your-username.github.io/weatherly/)
