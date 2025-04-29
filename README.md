@@ -1,54 +1,54 @@
-# Weatherly 🌤️
+# Weatherly 🌦️
 
-**Weatherly** is a sleek single-page weather app built using **HTML**, **JavaScript**, and **Tailwind CSS**.  
-It fetches real-time weather data for any city using the **OpenWeatherMap API**, and supports both metric and imperial units.
+**Weatherly** is a simple single-page weather app built with **HTML**, **Vanilla JavaScript**, and **Tailwind CSS**.  
+It fetches real-time weather data for any city using the **OpenWeatherMap API** and supports both metric and imperial units.
 
 ![Weatherly Screenshot](./weather-app.png)
 
-## 🔥 Features
-- 🌍 Search for any city and view live weather info
-- 💨 Shows temperature, wind speed, and humidity
-- 🔁 Toggle between Metric (°C, m/s) and Imperial (°F, mph)
-- 💡 Smooth loading animation
-- 🎨 Responsive and clean UI using Tailwind
-- 🎬 Animated weather icons via `.lottie` files
+---
 
-## 🛠️ Technologies
-- HTML
-- JavaScript (Vanilla)
-- Tailwind CSS (via CDN)
-- Axios for API requests
-- OpenWeatherMap API
-- Lottie for animations
+## 🌐 Live Demo
 
-## 🚀 How to Run
-1. Clone or download this repo
-2. Make sure you have internet access (to load CDN + API)
-3. Open `weather.html` in your browser
-4. Type a city name in the input box and see the magic!
-
-> ⚠️ The API key is hardcoded and has usage limits — you can replace it with your own from [OpenWeatherMap](https://openweathermap.org/).
-
-## 📸 Preview
-
-![App UI](./weather-app.png)
-
-## 🧠 Inspiration
-This project was made to practice:
-- Working with public APIs
-- DOM manipulation
-- Handling async functions
-- UI/UX with Tailwind CSS
-
-## 📝 License
-This project is open-source and free to use.
+👉 [Click here to view the live site](https://mrezarp.github.io/weatherly/)
 
 ---
 
-### 🤝 Credits
-Weather data provided by [OpenWeatherMap](https://openweathermap.org)  
-Weather icons powered by `.lottie` animations
+## ✨ Features
 
+- 🌍 Search any city and get live weather data
+- 💨 Shows temperature, wind speed, and humidity
+- 🔁 Switch between Metric (°C/m/s) and Imperial (°F/mph)
+- 🎬 Animated weather icons using Lottie files
+- ⚡ Smooth loading animation
 
-## 🌐 Live Demo
-[Click here to view the live app](https://mrezarp.github.io/Weatherly/)
+---
+
+## ⚙️ Tech Stack
+
+- HTML5
+- JavaScript (Vanilla)
+- Tailwind CSS
+- Axios (local)
+- OpenWeatherMap API
+- Lottie animations
+
+---
+
+## 🚀 How to Use
+
+1. Clone the repo or [download the ZIP](https://github.com/mrezarp/weatherly)
+2. Open `index.html` in your browser
+3. Type a city name to get the current weather instantly!
+
+---
+
+## 🧠 Credits
+
+- Weather data from [OpenWeatherMap](https://openweathermap.org/)
+- Animated icons powered by [Lottie](https://lottiefiles.com/)
+
+---
+
+## ✍️ Author
+
+Made with ❤️ by [@mrezarp](https://github.com/mrezarp)
