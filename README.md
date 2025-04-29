@@ -52,4 +52,3 @@ Weather icons powered by `.lottie` animations
 
 ## 🌐 Live Demo
 [Click here to view the live app](https://mrezarp.github.io/weatherly/)
-
