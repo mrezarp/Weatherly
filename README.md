@@ -9,7 +9,7 @@ It fetches real-time weather data for any city using the **OpenWeatherMap API** 
 
 ## 🌐 Live Demo
 
-👉 [Click here to view the live site](https://mrezarp.github.io/weatherly/)
+👉 [Click here to view the live site](https://mrezarp.github.io/Weatherly/)
 
 ---
 
