@@ -36,7 +36,7 @@ It fetches real-time weather data for any city using the **OpenWeatherMap API** 
 
 ## 🚀 How to Use
 
-1. Clone the repo or [download the ZIP](https://github.com/mrezarp/weatherly)
+1. Clone the repo or [download the ZIP](https://github.com/mrezarp/Weatherly)
 2. Open `index.html` in your browser
 3. Type a city name to get the current weather instantly!
 
