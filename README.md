@@ -1,7 +1,7 @@
 # Weatherly 🌦️
 
-**Weatherly** is a simple single-page weather app built with **HTML**, **Vanilla JavaScript**, and **Tailwind CSS**.  
-It fetches real-time weather data for any city using the **OpenWeatherMap API** and supports both metric and imperial units.
+**Weatherly** is a clean and responsive single-page weather app built with **HTML**, **Vanilla JavaScript**, and **Tailwind CSS**.  
+It fetches real-time weather data for any city using the **OpenWeatherMap API**, and supports both metric and imperial units.
 
 ![Weatherly Screenshot](./weather-app.png)
 
@@ -20,6 +20,7 @@ It fetches real-time weather data for any city using the **OpenWeatherMap API** 
 - 🔁 Switch between Metric (°C/m/s) and Imperial (°F/mph)
 - 🎬 Animated weather icons using Lottie files
 - ⚡ Smooth loading animation
+- 📱 Fully responsive layout (mobile-first with Tailwind)
 
 ---
 
