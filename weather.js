@@ -27,7 +27,7 @@ function nToMonth(month) {
 
 async function getSuggestions(location) {
     try {
-        let { data } = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${myApiCode}`)
+        let { data } = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${myApiCode}`)
         return data
     } catch (err) {
         console.log(err)
