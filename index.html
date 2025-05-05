@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="src/css/output.css" />
     <script src="libs/axios.min.js"></script>
-    <script
-      src="libs/dotlottie-player.js"
-      type="module"
-    ></script>
+    <script src="libs/dotlottie-player.js" type="module"></script>
     <script defer src="weather.js"></script>
   </head>
-  <body class="md:h-screen md:w-screen flex flex-col justify-center items-center">
-    <div id="loading" class="fixed inset-0 bg-white flex items-center justify-center z-50" id="loader">
-      <div class="w-20 h-20 border-8 border-text-gray border-t-transparent rounded-full animate-spin"></div>
+  <body
+    class="md:h-screen md:w-screen flex flex-col justify-center items-center"
+  >
+    <div
+      id="loading"
+      class="fixed inset-0 bg-white flex items-center justify-center z-50"
+      id="loader"
+    >
+      <div
+        class="w-20 h-20 border-8 border-text-gray border-t-transparent rounded-full animate-spin"
+      ></div>
     </div>
 
     <main
@@ -42,39 +47,52 @@
           </label>
         </fieldset>
       </div>
-      <div class="relative w-full rounded-2xl flex items-center shadow-sm">
+      <div class="flex relative flex-col w-full">
         <div
-          class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+          class="relative w-full rounded-2xl flex items-center shadow-[0px_0px_4px_0px_rgba(0,_0,_0,_0.1)] text-sm"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6 text-gray-500"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+          <div class="flex items-center w-full">
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 text-gray-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              id="town"
+              value="Lahijan"
+              placeholder="Search"
+              class="lock w-full px-3 py-2.5 pl-11 text-sm outline-0 text-text-gray"
+              type="text"
             />
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-            />
-          </svg>
+          </div>
         </div>
-        <input
-          id="town"
-          value="Lahijan"
-          placeholder="Search"
-          class="lock w-[600px] px-3 py-2.5 pl-11 text-sm outline-0 text-text-gray"
-          type="text"
-        />
+        <div
+          id="search-suggestions"
+          style="display: none;"
+          class="w-full absolute rounded-2xl p-4 shadow-[0px_0px_4px_0px_rgba(0,_0,_0,_0.1)] text-sm top-14 z-50 bg-white text-primary-dark flex-col gap-2"
+        ></div>
       </div>
-      <div class="relative flex md:flex-row flex-col gap-10 items-center justify-center">
+      <div
+        class="relative flex md:flex-row flex-col gap-10 items-center justify-center"
+      >
         <div class="flex top-4 relative gap-4 items-center">
           <dotlottie-player
             background="transparent"
@@ -82,18 +100,21 @@
             style="width: 300px; height: 300px"
             loop
             autoplay
+            src="src/weather-icon/01d.lottie"
             id="icon"
           ></dotlottie-player>
         </div>
         <div class="flex items-center relative">
-          <span id="temp" class="text-text-gray font-bold text-9xl md:text-[180px]"
+          <span
+            id="temp"
+            class="text-text-gray font-bold text-9xl md:text-[180px]"
             >15°</span
           >
 
           <div class="flex relative top-9 right-4 flex-col opacity-60 gap-1">
             <div class="flex items-center gap-4">
               <img
-                src="weather-icon/Air-Flow-Symbol.png"
+                src="src/weather-icon/Air-Flow-Symbol.png"
                 class="size-6"
                 alt=""
               />
@@ -101,7 +122,7 @@
             </div>
             <div class="flex items-center gap-4">
               <img
-                src="weather-icon/water.webp"
+                src="src/weather-icon/water.webp"
                 class="size-6 rotate-180"
                 alt=""
               />
@@ -121,11 +142,23 @@
         </p>
       </div>
     </main>
-    <footer class="flex items-center flex-row text-[10px] md:absolute md:bottom-4 md:mt-0 mt-10 sm:text-xs md:text-sm gap-1 text-text-gray/60 font-medium">
-      ☁️ Made with love by 
-      <a href="https://github.com/mrezarp" target="_blank" class="underline transition hover:text-text-dark">MohammadReza</a> • Powered by 
-      <a href="https://openweathermap.org" target="_blank" class="underline transition hover:text-text-dark">OpenWeatherMap</a>
+    <footer
+      class="flex items-center flex-row pb-4 text-[10px] md:absolute md:p-0 md:bottom-4 md:mt-0 mt-10 sm:text-xs md:text-sm gap-1 text-text-gray/60 font-medium"
+    >
+      ☁️ Made with love by
+      <a
+        href="https://github.com/mrezarp"
+        target="_blank"
+        class="underline transition hover:text-text-dark"
+        >MohammadReza</a
+      >
+      • Powered by
+      <a
+        href="https://openweathermap.org"
+        target="_blank"
+        class="underline transition hover:text-text-dark"
+        >OpenWeatherMap</a
+      >
     </footer>
-    
   </body>
 </html>
